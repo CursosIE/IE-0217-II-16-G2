@@ -1,0 +1,174 @@
+\hypertarget{class_cuadrado}{}\section{Cuadrado Class Reference}
+\label{class_cuadrado}\index{Cuadrado@{Cuadrado}}
+
+
+{\ttfamily \#include $<$Cuadrado.\+h$>$}
+
+Inheritance diagram for Cuadrado\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cuadrado}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cuadrado_ad28d9dddc29e1987ec620b07b0a4acc9}{Cuadrado} ()
+\begin{DoxyCompactList}\small\item\em Me crea un cuadrado con un lado ingresado por el usuario. El constructor me genera un nombre y color genericos dado que en este caso no se le especifico algun nombre o color. \end{DoxyCompactList}\item 
+\hyperlink{class_cuadrado_a1cdcb72a3c1475420599130e7488c6ad}{Cuadrado} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Genera un cuadrado con nombre y color ingresado por el usuario con una longitud del lado ingresado por el usuario. \end{DoxyCompactList}\item 
+{\bfseries Cuadrado} (const \hyperlink{class_cuadrado}{Cuadrado} \&orig)\hypertarget{class_cuadrado_a51f15bc1eb52008d394ac1191e257aeb}{}\label{class_cuadrado_a51f15bc1eb52008d394ac1191e257aeb}
+
+\item 
+void \hyperlink{class_cuadrado_a3d1411d7a4cd8734938092727009d702}{Area} ()
+\begin{DoxyCompactList}\small\item\em Funcion para calcular el area del cuadrado. \end{DoxyCompactList}\item 
+void \hyperlink{class_cuadrado_aa1b3dceb0c4ecfe7680f459c635e6d28}{Perimetro} ()
+\begin{DoxyCompactList}\small\item\em Funcion para calcular el perimetro del cuadrado. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_cuadrado_a8600ccace0a61a8ba7dd0933bd344b33}{operator$\sim$} ()
+\begin{DoxyCompactList}\small\item\em Muestra las propiedades del cuadrado. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_cuadrado_af911d1931dba68c5ed410852569f365b}{operator!} ()
+\begin{DoxyCompactList}\small\item\em Muestra el resultado del calculo de area y perimetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries lado}\hypertarget{class_cuadrado_a0480679f3e1c059282f532167c81d439}{}\label{class_cuadrado_a0480679f3e1c059282f532167c81d439}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: \hyperlink{_cuadrado_8h_source}{Cuadrado.\+h} \begin{DoxyAuthor}{Author}
+\+: jose
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+September 6, 2016 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em lado} & guarda el lado de cada cuadrado creado \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Cuadrado@{Cuadrado}!Cuadrado@{Cuadrado}}
+\index{Cuadrado@{Cuadrado}!Cuadrado@{Cuadrado}}
+\subsubsection[{\texorpdfstring{Cuadrado()}{Cuadrado()}}]{\setlength{\rightskip}{0pt plus 5cm}Cuadrado\+::\+Cuadrado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cuadrado_ad28d9dddc29e1987ec620b07b0a4acc9}{}\label{class_cuadrado_ad28d9dddc29e1987ec620b07b0a4acc9}
+
+
+Me crea un cuadrado con un lado ingresado por el usuario. El constructor me genera un nombre y color genericos dado que en este caso no se le especifico algun nombre o color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & variable temporal para guardar el lado. \\
+\hline
+\end{DoxyParams}
+\index{Cuadrado@{Cuadrado}!Cuadrado@{Cuadrado}}
+\index{Cuadrado@{Cuadrado}!Cuadrado@{Cuadrado}}
+\subsubsection[{\texorpdfstring{Cuadrado(std\+::string, std\+::string)}{Cuadrado(std::string, std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}Cuadrado\+::\+Cuadrado (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{a, }
+\item[{std\+::string}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cuadrado_a1cdcb72a3c1475420599130e7488c6ad}{}\label{class_cuadrado_a1cdcb72a3c1475420599130e7488c6ad}
+
+
+Genera un cuadrado con nombre y color ingresado por el usuario con una longitud del lado ingresado por el usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Guarda el nombre temporalmente \\
+\hline
+{\em b} & Guarda el color temporalmente 
+\begin{DoxyCode}
+this->color = b; 
+this->nombre = a;
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Cuadrado@{Cuadrado}!Area@{Area}}
+\index{Area@{Area}!Cuadrado@{Cuadrado}}
+\subsubsection[{\texorpdfstring{Area()}{Area()}}]{\setlength{\rightskip}{0pt plus 5cm}void Cuadrado\+::\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_cuadrado_a3d1411d7a4cd8734938092727009d702}{}\label{class_cuadrado_a3d1411d7a4cd8734938092727009d702}
+
+
+Funcion para calcular el area del cuadrado. 
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{double} area = this->lado * this->lado ; 
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em area} & Variable temporal del metodo para el area del cuadrado \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_figura}{Figura}.
+
+\index{Cuadrado@{Cuadrado}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!Cuadrado@{Cuadrado}}
+\subsubsection[{\texorpdfstring{operator"!()}{operator!()}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Cuadrado\+::operator! (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cuadrado_af911d1931dba68c5ed410852569f365b}{}\label{class_cuadrado_af911d1931dba68c5ed410852569f365b}
+
+
+Muestra el resultado del calculo de area y perimetro. 
+
+\begin{DoxyReturn}{Returns}
+No retorna nada ademas de imprimir la informacion. 
+\end{DoxyReturn}
+\index{Cuadrado@{Cuadrado}!operator````~@{operator$\sim$}}
+\index{operator````~@{operator$\sim$}!Cuadrado@{Cuadrado}}
+\subsubsection[{\texorpdfstring{operator$\sim$()}{operator~()}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Cuadrado\+::operator$\sim$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_cuadrado_a8600ccace0a61a8ba7dd0933bd344b33}{}\label{class_cuadrado_a8600ccace0a61a8ba7dd0933bd344b33}
+
+
+Muestra las propiedades del cuadrado. 
+
+\begin{DoxyReturn}{Returns}
+No retorna nada ademas de imprimir la informacion 
+\end{DoxyReturn}
+\index{Cuadrado@{Cuadrado}!Perimetro@{Perimetro}}
+\index{Perimetro@{Perimetro}!Cuadrado@{Cuadrado}}
+\subsubsection[{\texorpdfstring{Perimetro()}{Perimetro()}}]{\setlength{\rightskip}{0pt plus 5cm}void Cuadrado\+::\+Perimetro (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_cuadrado_aa1b3dceb0c4ecfe7680f459c635e6d28}{}\label{class_cuadrado_aa1b3dceb0c4ecfe7680f459c635e6d28}
+
+
+Funcion para calcular el perimetro del cuadrado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Per} & guarda el resultado del calculo del perimetro. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_figura}{Figura}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Cuadrado.\+h\item 
+Cuadrado.\+cpp\end{DoxyCompactItemize}

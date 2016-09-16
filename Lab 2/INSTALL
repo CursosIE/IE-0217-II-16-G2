@@ -1,0 +1,20 @@
+Para instalar:
+
+Primero abra una consola en el directorio donde estas los source codes(Figura.h, Figura.cpp , Makefile).
+
+Luego proceda a utilizar el comando "make" en la consola, esto le copilara el programa y le genera un a.out ejecutable (es lo que se corre para acceder al programa). 
+
+En este punto el programa ya esta copilado e instalado. 
+
+Para correr el programa hay varias maneras explicadas en el archivo README.
+
+Si lo desea hacer de manera manual asegurese de tener algun copilador de c++. 
+En linux con g++ se copilaria con el comando en la consola de:
+
+g++ Circulo.cpp Cuadrado.cpp Figura.cpp main.cpp Triangulo.cpp 
+
+
+Para desintalar:
+
+Ejecute el comando "make clean"
+Ejecute el comando rm a.out en la consola

@@ -1,0 +1,30 @@
+El programa consiste principalmente en una clase Figura con los atributos nombre y color. Este clase tambien tiene dos metodos principales: Area y Perimetro. Por herencia tenemos Circulos, Cuadrados y Triangulos que por herencia obtienen los atributos y metodos de la clase figura. 
+
+Al formar un cuadrado se le preguntara al usuario el largo del lado. En el caso del circulo el radio de este y en el caso del triangulo se le piden los tres lados al usuario. 
+
+Las sobrecargas de operadores se hicieron respectivemente para cada tipo de figura (cuadrado, triangulo o circulo) se realizaron con punteros por ende al declarar una figura en el main() no se puede utilizar el puntero Figura* ya que cada subclase tiene su propia sobrecarga. 
+
+Como utilizar: 
+
+Si desea ingresar un nombre y un color para alguna de las figuras en el main() debe declarar la figura de la siguiente manera:
+
+Triangulo* a = new Triangulo(aqui va el nombre, aqui el color); 
+
+De manera analoga con las demas figuras (circulo y cuadrado). 
+Los operadores sobrecargados son ~ y !. Para utilizarlos de deben llamar de las siguientes maneras:
+
+!(*a);
+~(*a);
+
+El operador ~ imprime los datos de la figura: el nombre, el color y dependiendo de la figura la medida del lado o lados o el radio. 
+
+El operador ! muestra los resultados de los metodos respectivos a cada figura: calculo del perimetro y del area. 
+
+Para correr el programa corra en la terminal el comando ./a.out.
+
+
+Autores:
+Jose Alberto Barrantes Abellan B50881
+Alejanro Cedeño Uribe B41672
+
+ 

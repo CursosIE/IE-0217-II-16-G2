@@ -1,0 +1,109 @@
+\hypertarget{class_triangulo}{}\section{Triangulo Class Reference}
+\label{class_triangulo}\index{Triangulo@{Triangulo}}
+Inheritance diagram for Triangulo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_triangulo}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_triangulo_a905d421bd19655a979ccad9e2998db0c}{Triangulo} ()\hypertarget{class_triangulo_a905d421bd19655a979ccad9e2998db0c}{}\label{class_triangulo_a905d421bd19655a979ccad9e2998db0c}
+
+\begin{DoxyCompactList}\small\item\em Me crea un triangulo con nombre y color genericos. \end{DoxyCompactList}\item 
+{\bfseries Triangulo} (const \hyperlink{class_triangulo}{Triangulo} \&orig)\hypertarget{class_triangulo_a1a7267ad3feb850a9718002420fc2fd8}{}\label{class_triangulo_a1a7267ad3feb850a9718002420fc2fd8}
+
+\item 
+\hyperlink{class_triangulo_aa56f00477a32f8c6465b2b7256fdd7d0}{Triangulo} (std\+::string, std\+::string)
+\begin{DoxyCompactList}\small\item\em Me crea un triangulo con nombre y color ingresado por el usuario. \end{DoxyCompactList}\item 
+void \hyperlink{class_triangulo_a1174be9286bedca30ef95806c52bdc2d}{obtener\+Lados} ()\hypertarget{class_triangulo_a1174be9286bedca30ef95806c52bdc2d}{}\label{class_triangulo_a1174be9286bedca30ef95806c52bdc2d}
+
+\begin{DoxyCompactList}\small\item\em Obtiene los lado del triangulo (tres lados) y los guarda en los lados de cada triangulo creado (this-\/$>$lado). \end{DoxyCompactList}\item 
+void {\bfseries Area} ()\hypertarget{class_triangulo_aa8d4fae608682df1bcac3b68982a86e6}{}\label{class_triangulo_aa8d4fae608682df1bcac3b68982a86e6}
+
+\item 
+void {\bfseries Perimetro} ()\hypertarget{class_triangulo_a02c05bf39e881390e7bc9bf3d6f1b680}{}\label{class_triangulo_a02c05bf39e881390e7bc9bf3d6f1b680}
+
+\item 
+void $\ast$ \hyperlink{class_triangulo_a7a8a19fd43cb3181e672b004b4ce83d5}{operator$\sim$} ()
+\begin{DoxyCompactList}\small\item\em Muestra los atributos de cada triangulo (nombre, color, lados). \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{class_triangulo_ab234082ba67e5dd0636b05e24884c470}{operator!} ()
+\begin{DoxyCompactList}\small\item\em Muestra los resultados de area y perimetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries lado1}\hypertarget{class_triangulo_ad56af20f632db44b7bd02b9435d6d979}{}\label{class_triangulo_ad56af20f632db44b7bd02b9435d6d979}
+
+\item 
+double {\bfseries lado2}\hypertarget{class_triangulo_ae76fdab53758e4786e8f8cb2640c8bf7}{}\label{class_triangulo_ae76fdab53758e4786e8f8cb2640c8bf7}
+
+\item 
+double {\bfseries lado3}\hypertarget{class_triangulo_a4c6887a4f81fe2b6afc940d52e75b2bc}{}\label{class_triangulo_a4c6887a4f81fe2b6afc940d52e75b2bc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Triangulo@{Triangulo}!Triangulo@{Triangulo}}
+\index{Triangulo@{Triangulo}!Triangulo@{Triangulo}}
+\subsubsection[{\texorpdfstring{Triangulo(std\+::string, std\+::string)}{Triangulo(std::string, std::string)}}]{\setlength{\rightskip}{0pt plus 5cm}Triangulo\+::\+Triangulo (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{a, }
+\item[{std\+::string}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangulo_aa56f00477a32f8c6465b2b7256fdd7d0}{}\label{class_triangulo_aa56f00477a32f8c6465b2b7256fdd7d0}
+
+
+Me crea un triangulo con nombre y color ingresado por el usuario. 
+
+
+\begin{DoxyCode}
+this->nombre = a; 
+this->color = b;
+\hyperlink{class_triangulo_a1174be9286bedca30ef95806c52bdc2d}{Triangulo::obtenerLados}();
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & Nombre del triangulo \\
+\hline
+{\em b} & Color del triangulo \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Triangulo@{Triangulo}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!Triangulo@{Triangulo}}
+\subsubsection[{\texorpdfstring{operator"!()}{operator!()}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Triangulo\+::operator! (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangulo_ab234082ba67e5dd0636b05e24884c470}{}\label{class_triangulo_ab234082ba67e5dd0636b05e24884c470}
+
+
+Muestra los resultados de area y perimetro. 
+
+\begin{DoxyReturn}{Returns}
+Informacion 
+\end{DoxyReturn}
+\index{Triangulo@{Triangulo}!operator````~@{operator$\sim$}}
+\index{operator````~@{operator$\sim$}!Triangulo@{Triangulo}}
+\subsubsection[{\texorpdfstring{operator$\sim$()}{operator~()}}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Triangulo\+::operator$\sim$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_triangulo_a7a8a19fd43cb3181e672b004b4ce83d5}{}\label{class_triangulo_a7a8a19fd43cb3181e672b004b4ce83d5}
+
+
+Muestra los atributos de cada triangulo (nombre, color, lados). 
+
+\begin{DoxyReturn}{Returns}
+Informacion 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Triangulo.\+h\item 
+Triangulo.\+cpp\end{DoxyCompactItemize}
