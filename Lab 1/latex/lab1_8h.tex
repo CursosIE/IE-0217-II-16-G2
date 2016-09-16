@@ -1,0 +1,97 @@
+\section{lab1.\+h File Reference}
+\label{lab1_8h}\index{lab1.\+h@{lab1.\+h}}
+
+
+Header file, con los include\textquotesingle{}s y funciones necesarias en el programa.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include \char`\"{}A\+R\+Na\+A\+A.\+cpp\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf imprimir\+Arreglo\+De\+Char} (char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Funcion para imprimir n terminos del arreglo de aminoacidos. Funcion para imprimir n cantidad de aminoacidos contenidos en el arreglo obtenido de la funcion A\+R\+Na\+AA. \end{DoxyCompactList}\item 
+char $\ast$ {\bf A\+R\+Na\+AA} (char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em Funcion que recive un arreglo y su longitud. Funcion la cual parsea la cadena de A\+RN ingresada por el usuario y por medio de comparacion llena un arreglo de salida de los aminoacidos includios en la cadena de A\+RN. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file, con los include\textquotesingle{}s y funciones necesarias en el programa. 
+
+\begin{DoxyAuthor}{Author}
+Jose Alberto Barrantes 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\index{lab1.\+h@{lab1.\+h}!A\+R\+Na\+AA@{A\+R\+Na\+AA}}
+\index{A\+R\+Na\+AA@{A\+R\+Na\+AA}!lab1.\+h@{lab1.\+h}}
+\subsubsection[{A\+R\+Na\+A\+A(char $\ast$, int)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ A\+R\+Na\+AA (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{R\+NA, }
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}\label{lab1_8h_aa0ae5b626fb43a7d7f99e33df2e3c634}
+
+
+Funcion que recive un arreglo y su longitud. Funcion la cual parsea la cadena de A\+RN ingresada por el usuario y por medio de comparacion llena un arreglo de salida de los aminoacidos includios en la cadena de A\+RN. 
+
+
+\begin{DoxyCode}
+1 char * re = new char [a];
+2 int i;
+3 int nextAA;
+4 
+5 for (i=3 ; i<(a-3) ;i+=3) \{
+6     if (RNA[i]=='U') \{
+7         if (RNA[i+1]=='U') \{
+8             if (RNA[i+2]=='U' || RNA[i+2]=='C') \{
+9                 .
+10                 .
+11                 .
+12 
+13 return re;
+14 delete re;
+15 \}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em re\mbox{[}out\mbox{]}} & Puntero del tamaño de la cadena de A\+RN. \\
+\hline
+{\em mext\+AA} & contador externo para agregar aminoacidos al arreglo \char`\"{}re\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\index{lab1.\+h@{lab1.\+h}!imprimir\+Arreglo\+De\+Char@{imprimir\+Arreglo\+De\+Char}}
+\index{imprimir\+Arreglo\+De\+Char@{imprimir\+Arreglo\+De\+Char}!lab1.\+h@{lab1.\+h}}
+\subsubsection[{imprimir\+Arreglo\+De\+Char(char $\ast$, int)}]{\setlength{\rightskip}{0pt plus 5cm}void imprimir\+Arreglo\+De\+Char (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{a, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\label{lab1_8h_ab18ae1dcdbbde9965371ef3d9a89950b}
+
+
+Funcion para imprimir n terminos del arreglo de aminoacidos. Funcion para imprimir n cantidad de aminoacidos contenidos en el arreglo obtenido de la funcion A\+R\+Na\+AA. 
+
+
+\begin{DoxyCode}
+1 int i;
+2 cout << '|' ;
+3 for (i=0; i<n; i++) \{
+4     cout <<  a[i];
+5 \}
+6 cout << '|' << endl;
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em n} & cantidad de aminoacidos a imprimir en la consola; ingresado por el usuario. \\
+\hline
+\end{DoxyParams}

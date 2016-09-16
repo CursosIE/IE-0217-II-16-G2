@@ -1,0 +1,30 @@
+
+El programa consiste en un traductor de los codones de ARN a sus respectivos aminoacidos. 
+
+
+Errores Comunes:
+
+Los codones de ARN vienen en multiplos de tres, por ende el programa solo recibira codones con un numero de caracteres multiplo de tres; obviar este aviso causara una exception en el programa.
+
+Los codones ARN utilizan las letras ACGU, cualquier otra letra ingresada no causara problema al correr el programa, este simplemente ignorara ese codon ya que no tiene ningun aminoacido para dicho codon. 
+
+Ingresar numeros como argumentos tambien causara una exception de invalid_argument.
+
+Como utilizar: 
+Luego de instalar el programa segun descrito en INSTALL; estando en la terminal localizada en el directorio donde se installo vasta con escribir el comando "./a.out" en la terminal. Recuerde que debe ingresar los argumentos cuando corre el programa, ejemplo:
+
+./a.out UUCCCUAGUUCAGUA 
+
+Luego el programa le pedira ingresar la cantidad de aminoacidos a mostrar, ingrese un numero entero. 
+Recuerde que las cadenas de ARN siempre empiezan con un marcador de inicio y uno de final; por ende, el programa ignora las primeras 3 bases y las 3 ultimas. 
+
+Otra manera de correr el programa es utilizar el comando "make ejecutar" en la consola. En ese caso debe agregar los argumentos como es mostrado en el siguiente ejemplo:
+
+make ejecutar ARG="UUCCUAGUUCAGUA" 
+
+Luego el programa se ejecutara de manera automatica y le pedira los aminoacidos a imprimir. Luego el programa se cerrara. 
+
+Autores: 
+Jose Alberto Barrantes Abellan -B50881
+Alejandro Cedeño Uribe -B41672
+

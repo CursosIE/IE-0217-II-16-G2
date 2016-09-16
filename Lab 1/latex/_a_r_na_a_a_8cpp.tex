@@ -1,0 +1,92 @@
+\section{A\+R\+Na\+A\+A.\+cpp File Reference}
+\label{_a_r_na_a_a_8cpp}\index{A\+R\+Na\+A\+A.\+cpp@{A\+R\+Na\+A\+A.\+cpp}}
+
+
+funciones utilizadas para obtener la cadena de aminoacidos a partir de una de A\+RN. Por el medio de dos funciones \doxyref{Lab1.\+cc}{p.}{_lab1_8cc} obtiene la cadena de A\+RN y primero obtiene su equivalente en aminoacidos con la ayuda de la funcion A\+R\+Na\+AA. Luego n cantidad de aminoacidos son impresos con la funcion imprimir\+Arreglo\+De\+Char.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf imprimir\+Arreglo\+De\+Char} (char $\ast$a, int n)
+\begin{DoxyCompactList}\small\item\em Funcion para imprimir n terminos del arreglo de aminoacidos. Funcion para imprimir n cantidad de aminoacidos contenidos en el arreglo obtenido de la funcion A\+R\+Na\+AA. \end{DoxyCompactList}\item 
+char $\ast$ {\bf A\+R\+Na\+AA} (char $\ast$R\+NA, int a)
+\begin{DoxyCompactList}\small\item\em Funcion que recive un arreglo y su longitud. Funcion la cual parsea la cadena de A\+RN ingresada por el usuario y por medio de comparacion llena un arreglo de salida de los aminoacidos includios en la cadena de A\+RN. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+funciones utilizadas para obtener la cadena de aminoacidos a partir de una de A\+RN. Por el medio de dos funciones \doxyref{Lab1.\+cc}{p.}{_lab1_8cc} obtiene la cadena de A\+RN y primero obtiene su equivalente en aminoacidos con la ayuda de la funcion A\+R\+Na\+AA. Luego n cantidad de aminoacidos son impresos con la funcion imprimir\+Arreglo\+De\+Char. 
+
+\begin{DoxyAuthor}{Author}
+Jose Alberto Barrantes 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28 Aug 2016. 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{A\+R\+Na\+A\+A.\+cpp@{A\+R\+Na\+A\+A.\+cpp}!A\+R\+Na\+AA@{A\+R\+Na\+AA}}
+\index{A\+R\+Na\+AA@{A\+R\+Na\+AA}!A\+R\+Na\+A\+A.\+cpp@{A\+R\+Na\+A\+A.\+cpp}}
+\subsubsection[{A\+R\+Na\+A\+A(char $\ast$\+R\+N\+A, int a)}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ A\+R\+Na\+AA (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{R\+NA, }
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}\label{_a_r_na_a_a_8cpp_ac5395c9543ee471679da8c00d7d79e92}
+
+
+Funcion que recive un arreglo y su longitud. Funcion la cual parsea la cadena de A\+RN ingresada por el usuario y por medio de comparacion llena un arreglo de salida de los aminoacidos includios en la cadena de A\+RN. 
+
+
+\begin{DoxyCode}
+1 char * re = new char [a];
+2 int i;
+3 int nextAA;
+4 
+5 for (i=3 ; i<(a-3) ;i+=3) \{
+6     if (RNA[i]=='U') \{
+7         if (RNA[i+1]=='U') \{
+8             if (RNA[i+2]=='U' || RNA[i+2]=='C') \{
+9                 .
+10                 .
+11                 .
+12 
+13 return re;
+14 delete re;
+15 \}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em re\mbox{[}out\mbox{]}} & Puntero del tamaño de la cadena de A\+RN. \\
+\hline
+{\em mext\+AA} & contador externo para agregar aminoacidos al arreglo \char`\"{}re\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\index{A\+R\+Na\+A\+A.\+cpp@{A\+R\+Na\+A\+A.\+cpp}!imprimir\+Arreglo\+De\+Char@{imprimir\+Arreglo\+De\+Char}}
+\index{imprimir\+Arreglo\+De\+Char@{imprimir\+Arreglo\+De\+Char}!A\+R\+Na\+A\+A.\+cpp@{A\+R\+Na\+A\+A.\+cpp}}
+\subsubsection[{imprimir\+Arreglo\+De\+Char(char $\ast$a, int n)}]{\setlength{\rightskip}{0pt plus 5cm}void imprimir\+Arreglo\+De\+Char (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{a, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\label{_a_r_na_a_a_8cpp_a936edfd96c1e058d6ffdd91cd9f1fd2a}
+
+
+Funcion para imprimir n terminos del arreglo de aminoacidos. Funcion para imprimir n cantidad de aminoacidos contenidos en el arreglo obtenido de la funcion A\+R\+Na\+AA. 
+
+
+\begin{DoxyCode}
+1 int i;
+2 cout << '|' ;
+3 for (i=0; i<n; i++) \{
+4     cout <<  a[i];
+5 \}
+6 cout << '|' << endl;
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em n} & cantidad de aminoacidos a imprimir en la consola; ingresado por el usuario. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,13 @@
+Para instalar:
+
+Primero abra una consola en el directorio donde estas los source codes(lab1.h , Lab1.cc, ARNaAA.cpp y Makefile). 
+
+Luego proceda a utilizar el comando "make" en la consola, esto le copilara el programa y le genera un a.out ejecutable (es lo que se corre para acceder al programa). 
+
+En este punto el programa ya esta copilado e instalado. 
+
+Para correr el programa hay varias maneras explicadas en el archivo README.
+
+Para desintalar:
+
+Ejecute el comando "make clean"

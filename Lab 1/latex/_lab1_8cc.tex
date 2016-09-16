@@ -1,0 +1,68 @@
+\section{Lab1.\+cc File Reference}
+\label{_lab1_8cc}\index{Lab1.\+cc@{Lab1.\+cc}}
+
+
+Programa para obtener la cadena de aminoacidos a partir de una de R\+NA. Por el medio de dos funciones la cadena A\+RN obtiene su equivalente en aminoacidos con la ayuda de la funcion A\+R\+Na\+AA. Luego n cantidad de aminoacidos son impresos con la funcion imprimir\+Arreglo\+De\+Char.  
+
+
+{\ttfamily \#include \char`\"{}lab1.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Programa para obtener la cadena de aminoacidos a partir de una de R\+NA. Por el medio de dos funciones la cadena A\+RN obtiene su equivalente en aminoacidos con la ayuda de la funcion A\+R\+Na\+AA. Luego n cantidad de aminoacidos son impresos con la funcion imprimir\+Arreglo\+De\+Char. 
+
+\begin{DoxyAuthor}{Author}
+Jose Alberto Barrantes 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+28 Aug 2016. 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Lab1.\+cc@{Lab1.\+cc}!main@{main}}
+\index{main@{main}!Lab1.\+cc@{Lab1.\+cc}}
+\subsubsection[{main(int argc, char $\ast$$\ast$argv)}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{_lab1_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+Funcion principal que revisa si la cadena de A\+RN es multiplo de 3 para correr el programa o no. 
+\begin{DoxyCode}
+1 int i;
+2 int j;
+3 int aaAImprimir;
+4 cout << "" << endl;
+5 int longitud = strlen(argv[1]);
+6 if (longitud % 3 == 0) \{
+7     cout << "Numero de Aminoacidos a imprimir: " ;
+8     cin >>  aaAImprimir;
+9     cout << endl;
+10     imprimirArregloDeChar(ARNaAA(argv[1] , strlen(argv[1])), aaAImprimir ); 
+11 \}
+12 else \{
+13     throw invalid\_argument("Cadena de multiplo diferente de tres");
+14 \}
+15 
+16 return 0;
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em longitud\mbox{[}in\mbox{]}} & Se utiliza para hacer entero la funcion strlen(). Luego se revisa si es multiplo de 3. \\
+\hline
+{\em argc} & \\
+\hline
+{\em argv} & \\
+\hline
+{\em aa\+Imprimir\mbox{[}in\mbox{]}} & Cantidad de aminoacidos a imprimir del total traducido de la cadena A\+RN original. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve un 0 en funcion de señal que todo salio bien. 
+\end{DoxyReturn}
