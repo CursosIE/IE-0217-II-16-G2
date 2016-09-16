@@ -1,0 +1,73 @@
+\hypertarget{suma_8c}{}\section{suma.\+c File Reference}
+\label{suma_8c}\index{suma.\+c@{suma.\+c}}
+
+
+Programa para sumar argumentos flotantes ingresados.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{suma_8c_acda09b8c72ceee96283ce32e936a8f62}{sumar} (int a, char $\ast$$\ast$b)
+\item 
+int \hyperlink{suma_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Programa para sumar argumentos flotantes ingresados. 
+
+\begin{DoxyAuthor}{Author}
+Jose Alberto 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+19 Aug 2016 Metodo el cual suma los argumentos flotantes ingresados a la hora de correr el programa, luego retorna el resultado de dicha suma de argumentos. 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{suma.\+c@{suma.\+c}!main@{main}}
+\index{main@{main}!suma.\+c@{suma.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{suma_8c_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{suma_8c_a3c04138a5bfe5d72780bb7e82a18e627}
+Funcion principal que corre el programa. 
+\begin{DoxyCode}
+1 *float result= sumar(argc, argv);
+2     printf("%.6f\(\backslash\)n",result);
+3     return 0;
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+Devuelve un 0 para mostrar que todo se corrio bien.
+\end{DoxyReturn}
+\index{suma.\+c@{suma.\+c}!sumar@{sumar}}
+\index{sumar@{sumar}!suma.\+c@{suma.\+c}}
+\subsubsection[{\texorpdfstring{sumar(int a, char $\ast$$\ast$b)}{sumar(int a, char **b)}}]{\setlength{\rightskip}{0pt plus 5cm}float sumar (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{char $\ast$$\ast$}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{suma_8c_acda09b8c72ceee96283ce32e936a8f62}{}\label{suma_8c_acda09b8c72ceee96283ce32e936a8f62}
+Funcion para sumar argumentos 
+\begin{DoxyCode}
+1 for (int i=1;i<a;i++) \{
+2     float num;
+3     sscanf(b[i], "%f", &num);
+4     suma+=num; 
+5   \}
+6   return suma;
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em num} & Variable para guardar temporalmente cada argumento ingresado para sumarse. \\
+\hline
+{\em suma} & Variable la cual recibe y guarda el resultado de la suma de la fila de argumentos $\ast$ ingresados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Funcion devuelve el resultado de la suma
+\end{DoxyReturn}
