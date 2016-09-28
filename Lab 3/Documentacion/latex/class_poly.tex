@@ -1,0 +1,224 @@
+\hypertarget{class_poly}{}\section{Poly Class Reference}
+\label{class_poly}\index{Poly@{Poly}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_poly_aa3def076b74bed67904976ad4f9fe9b1}{Poly} ()\hypertarget{class_poly_aa3def076b74bed67904976ad4f9fe9b1}{}\label{class_poly_aa3def076b74bed67904976ad4f9fe9b1}
+
+\begin{DoxyCompactList}\small\item\em Me llena el arreglo this-\/$>$arg con ceros. Me crea un polinomio vacio de grado 1000. \end{DoxyCompactList}\item 
+\hyperlink{class_poly_a7a346680adff050d4876f9e979cb6f69}{Poly} (int)
+\begin{DoxyCompactList}\small\item\em Me llena un polinomio con grado ingresado por el usuario en el constructor. \end{DoxyCompactList}\item 
+{\bfseries Poly} (const \hyperlink{class_poly}{Poly} \&orig)\hypertarget{class_poly_aaf0ca6e62733f4cd65d5a049da0770d7}{}\label{class_poly_aaf0ca6e62733f4cd65d5a049da0770d7}
+
+\item 
+\hyperlink{class_poly}{Poly} \hyperlink{class_poly_a844187f2e350f9691b8da7b0035911e3}{operator+} (const \hyperlink{class_poly}{Poly} \&other)
+\begin{DoxyCompactList}\small\item\em Me suma dos polinomios. \end{DoxyCompactList}\item 
+\hyperlink{class_poly}{Poly} \hyperlink{class_poly_adb5e47086466c0fa979dff6dd536ea84}{operator-\/} (const \hyperlink{class_poly}{Poly} \&other)
+\begin{DoxyCompactList}\small\item\em Me resta dos polinomios. \end{DoxyCompactList}\item 
+\hyperlink{class_poly}{Poly} \hyperlink{class_poly_a4d30f14487a161434adeb78e93f3553a}{operator$\ast$} (const \hyperlink{class_poly}{Poly} \&other)
+\begin{DoxyCompactList}\small\item\em Me multiplica dos polinomios. \end{DoxyCompactList}\item 
+\hyperlink{class_poly}{Poly} \hyperlink{class_poly_af4a69f7d44d49128060cd4a60e57828b}{operator!} ()
+\begin{DoxyCompactList}\small\item\em Me obtiene la derivada de un polinomio. \end{DoxyCompactList}\item 
+void \hyperlink{class_poly_a57652b6c2c253ce3f42976988baeb03a}{operator$\sim$} ()
+\begin{DoxyCompactList}\small\item\em Me imprime un polinomio de algun degree (grado). \end{DoxyCompactList}\item 
+int \hyperlink{class_poly_a5ccdd1385c09a01943cbd6d78ebb7585}{obtener\+Grado} ()
+\begin{DoxyCompactList}\small\item\em Me obtiene el grado efectivo de un polinomio. Dato utilizado puramente para impresion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Poly@{Poly}!Poly@{Poly}}
+\index{Poly@{Poly}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{Poly(int)}{Poly(int)}}]{\setlength{\rightskip}{0pt plus 5cm}Poly\+::\+Poly (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poly_a7a346680adff050d4876f9e979cb6f69}{}\label{class_poly_a7a346680adff050d4876f9e979cb6f69}
+
+
+Me llena un polinomio con grado ingresado por el usuario en el constructor. 
+
+
+\begin{DoxyCode}
+degree = a+1;
+ \textcolor{keywordtype}{int} add;
+ \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<degree; i++) \{
+     std::cout << \textcolor{stringliteral}{"Ingrese coeficiente : "} << i << \textcolor{stringliteral}{"  "} <<std::endl;
+     std::cin >> add;
+     arg[i] = add;
+ \}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & Grado a llenar el polinomio. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Poly@{Poly}!obtener\+Grado@{obtener\+Grado}}
+\index{obtener\+Grado@{obtener\+Grado}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{obtener\+Grado()}{obtenerGrado()}}]{\setlength{\rightskip}{0pt plus 5cm}int Poly\+::obtener\+Grado (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poly_a5ccdd1385c09a01943cbd6d78ebb7585}{}\label{class_poly_a5ccdd1385c09a01943cbd6d78ebb7585}
+
+
+Me obtiene el grado efectivo de un polinomio. Dato utilizado puramente para impresion. 
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} grad = 0;
+ \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<=999; i++) \{
+     \textcolor{keywordflow}{if} (this->arg[i]!=0) \{
+         grad = i; 
+     \}
+ \}
+ \textcolor{keywordflow}{return} grad;
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+Entero que muestra el grado efectivo de un polinomio. 
+\end{DoxyReturn}
+\index{Poly@{Poly}!operator"!@{operator"!}}
+\index{operator"!@{operator"!}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{operator"!()}{operator!()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Poly} Poly\+::operator! (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poly_af4a69f7d44d49128060cd4a60e57828b}{}\label{class_poly_af4a69f7d44d49128060cd4a60e57828b}
+
+
+Me obtiene la derivada de un polinomio. 
+
+
+\begin{DoxyCode}
+\hyperlink{class_poly}{Poly} result;
+ \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= this->degree; i++) \{
+     result.arg[i-1] = this->arg[i]*i; 
+ \}
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{Returns}
+Me devuelve el polinomio derivado de algun polinomio 
+\end{DoxyReturn}
+\index{Poly@{Poly}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Poly \&other)}{operator*(const Poly &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Poly} Poly\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Poly} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poly_a4d30f14487a161434adeb78e93f3553a}{}\label{class_poly_a4d30f14487a161434adeb78e93f3553a}
+
+
+Me multiplica dos polinomios. 
+
+
+\begin{DoxyCode}
+\hyperlink{class_poly}{Poly} result;
+ \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<= this->degree; i++)
+     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j<=other.degree; j++) \{
+         result.arg[i+j] += (this->arg[i] * other.arg[j]); 
+     \}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em other} & Polinomio a multiplicar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Polinomio respuesta 
+\end{DoxyReturn}
+\index{Poly@{Poly}!operator+@{operator+}}
+\index{operator+@{operator+}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{operator+(const Poly \&other)}{operator+(const Poly &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Poly} Poly\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Poly} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poly_a844187f2e350f9691b8da7b0035911e3}{}\label{class_poly_a844187f2e350f9691b8da7b0035911e3}
+
+
+Me suma dos polinomios. 
+
+
+\begin{DoxyCode}
+\hyperlink{class_poly}{Poly} result;
+\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<=this->degree; i ++) \{
+    result.arg[i] += this->arg[i];
+\}
+\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j<=other.degree; j++) \{
+    result.arg[j] += other.arg[j];
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Polinomio a sumar con el primero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Polinomio de resultado. 
+\end{DoxyReturn}
+\index{Poly@{Poly}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{operator-\/(const Poly \&other)}{operator-(const Poly &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Poly} Poly\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Poly} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poly_adb5e47086466c0fa979dff6dd536ea84}{}\label{class_poly_adb5e47086466c0fa979dff6dd536ea84}
+
+
+Me resta dos polinomios. 
+
+
+\begin{DoxyCode}
+\hyperlink{class_poly}{Poly} result;
+\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i<=this->degree; i ++) \{
+    result.arg[i] += this->arg[i];
+\}
+\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j<=other.degree; j++) \{
+    result.arg[j] -= other.arg[j];
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Polinimio a restar al primero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Polinomio respuesta 
+\end{DoxyReturn}
+\index{Poly@{Poly}!operator````~@{operator$\sim$}}
+\index{operator````~@{operator$\sim$}!Poly@{Poly}}
+\subsubsection[{\texorpdfstring{operator$\sim$()}{operator~()}}]{\setlength{\rightskip}{0pt plus 5cm}void Poly\+::operator$\sim$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_poly_a57652b6c2c253ce3f42976988baeb03a}{}\label{class_poly_a57652b6c2c253ce3f42976988baeb03a}
+
+
+Me imprime un polinomio de algun degree (grado). 
+
+
+\begin{DoxyCode}
+\textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<999; i++)
+\{
+   \textcolor{keywordflow}{if} (arg[i] != 0 ) \{   
+    cout << this->arg[i];
+   \textcolor{keywordflow}{if} (i != 0)
+    cout << \textcolor{stringliteral}{"x^"} << i ;
+   
+   \textcolor{keywordflow}{if} (i != this->degree)
+    cout << \textcolor{stringliteral}{" + "};
+   \}
+\}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Poly.\+h\item 
+Poly.\+cpp\end{DoxyCompactItemize}

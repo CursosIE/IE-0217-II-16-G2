@@ -1,0 +1,140 @@
+\hypertarget{class_fraccion}{}\section{Fraccion Class Reference}
+\label{class_fraccion}\index{Fraccion@{Fraccion}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{Fraccion} ()
+\begin{DoxyCompactList}\small\item\em Me crea un objeto tipo fraccion. Me crea una fraccion con los numeros ingresados por el usuario. \end{DoxyCompactList}\item 
+\hyperlink{class_fraccion_a10be49615b66ea50accb7b433d7dcdfd}{Fraccion} (int, int)
+\begin{DoxyCompactList}\small\item\em Me crea un objeto tipo fraccion. Constructor en el cual el usuario ingresa el numerador y denominador de manera directa. \end{DoxyCompactList}\item 
+{\bfseries Fraccion} (const \hyperlink{class_fraccion}{Fraccion} \&orig)\hypertarget{class_fraccion_a0d56f72ef83ddbfa15b203d38e533c26}{}\label{class_fraccion_a0d56f72ef83ddbfa15b203d38e533c26}
+
+\item 
+\hyperlink{class_fraccion}{Fraccion} \hyperlink{class_fraccion_ad04d7b21a8d4067c9f3a6915de77cc59}{operator+} (const \hyperlink{class_fraccion}{Fraccion} \&other)
+\begin{DoxyCompactList}\small\item\em Se suma ambas fracciones. \end{DoxyCompactList}\item 
+\hyperlink{class_fraccion}{Fraccion} \hyperlink{class_fraccion_afcb21311a6236605f60964da28482a84}{operator-\/} (const \hyperlink{class_fraccion}{Fraccion} \&other)
+\begin{DoxyCompactList}\small\item\em Me resta ambas fracciones. \end{DoxyCompactList}\item 
+\hyperlink{class_fraccion}{Fraccion} \hyperlink{class_fraccion_aba7e8118b2dd42f449a865b422c71760}{operator$\ast$} (const \hyperlink{class_fraccion}{Fraccion} \&other)
+\begin{DoxyCompactList}\small\item\em Me multiplica ambas fracciones. \end{DoxyCompactList}\item 
+\hyperlink{class_fraccion}{Fraccion} \hyperlink{class_fraccion_a2fb92d2778ccefa7a0e751568ff7cd86}{operator/} (const \hyperlink{class_fraccion}{Fraccion} \&other)
+\begin{DoxyCompactList}\small\item\em Me divide ambas fracciones. \end{DoxyCompactList}\item 
+void \hyperlink{class_fraccion_a6ba2dac78e5ef60d6860d39ba3489bb1}{operator$\sim$} ()\hypertarget{class_fraccion_a6ba2dac78e5ef60d6860d39ba3489bb1}{}\label{class_fraccion_a6ba2dac78e5ef60d6860d39ba3489bb1}
+
+\begin{DoxyCompactList}\small\item\em Sobrecarga que muestra la fraccion deseada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ {\bfseries frac}\hypertarget{class_fraccion_a3bfdac828fde46e72c0e640e982ffedd}{}\label{class_fraccion_a3bfdac828fde46e72c0e640e982ffedd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\subsubsection[{\texorpdfstring{Fraccion()}{Fraccion()}}]{\setlength{\rightskip}{0pt plus 5cm}Fraccion\+::\+Fraccion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}{}\label{class_fraccion_a80b8bb475192ceb820428a57e911ceb5}
+
+
+Me crea un objeto tipo fraccion. Me crea una fraccion con los numeros ingresados por el usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em D} & Es un puntero de tipo int de tamaño dos para guardar el denominador y el numerador. \\
+\hline
+\end{DoxyParams}
+\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\index{Fraccion@{Fraccion}!Fraccion@{Fraccion}}
+\subsubsection[{\texorpdfstring{Fraccion(int, int)}{Fraccion(int, int)}}]{\setlength{\rightskip}{0pt plus 5cm}Fraccion\+::\+Fraccion (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{class_fraccion_a10be49615b66ea50accb7b433d7dcdfd}{}\label{class_fraccion_a10be49615b66ea50accb7b433d7dcdfd}
+
+
+Me crea un objeto tipo fraccion. Constructor en el cual el usuario ingresa el numerador y denominador de manera directa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Numerador de la fraccion \\
+\hline
+{\em b} & Denominador de la fraccion \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Fraccion@{Fraccion}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Fraccion@{Fraccion}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Fraccion \&other)}{operator*(const Fraccion &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fraccion} Fraccion\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fraccion} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_fraccion_aba7e8118b2dd42f449a865b422c71760}{}\label{class_fraccion_aba7e8118b2dd42f449a865b422c71760}
+
+
+Me multiplica ambas fracciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & La otra fraccion a multiplicarse con la primera \\
+\hline
+\end{DoxyParams}
+\index{Fraccion@{Fraccion}!operator+@{operator+}}
+\index{operator+@{operator+}!Fraccion@{Fraccion}}
+\subsubsection[{\texorpdfstring{operator+(const Fraccion \&other)}{operator+(const Fraccion &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fraccion} Fraccion\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fraccion} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_fraccion_ad04d7b21a8d4067c9f3a6915de77cc59}{}\label{class_fraccion_ad04d7b21a8d4067c9f3a6915de77cc59}
+
+
+Se suma ambas fracciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & La otra fraccion a sumarse con la primera. \\
+\hline
+\end{DoxyParams}
+\index{Fraccion@{Fraccion}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Fraccion@{Fraccion}}
+\subsubsection[{\texorpdfstring{operator-\/(const Fraccion \&other)}{operator-(const Fraccion &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fraccion} Fraccion\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fraccion} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_fraccion_afcb21311a6236605f60964da28482a84}{}\label{class_fraccion_afcb21311a6236605f60964da28482a84}
+
+
+Me resta ambas fracciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & La otra fraccion a restarse con la primera. \\
+\hline
+\end{DoxyParams}
+\index{Fraccion@{Fraccion}!operator/@{operator/}}
+\index{operator/@{operator/}!Fraccion@{Fraccion}}
+\subsubsection[{\texorpdfstring{operator/(const Fraccion \&other)}{operator/(const Fraccion &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fraccion} Fraccion\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Fraccion} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_fraccion_a2fb92d2778ccefa7a0e751568ff7cd86}{}\label{class_fraccion_a2fb92d2778ccefa7a0e751568ff7cd86}
+
+
+Me divide ambas fracciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & La otra fraccion a dividirse con la primera \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Fraccion.\+h\item 
+Fraccion.\+cpp\end{DoxyCompactItemize}

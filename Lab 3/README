@@ -1,0 +1,64 @@
+El programa consiste en una calculadora la cual tiene las cuatro operaciones basicas mas operaciones con matrices, polinomios (excepto division de polinomios, incluye derivacion de polinomios) y fracciones. Tenemos las tres clases principales: Matrix, Poly y Fraccion la cual incluyen sus sobrecargas de operadores respectivos y demas funciones necesarias. 
+
+Para crear una fraccion existen dos metodos principales el primero declarandolas en el main de la forma:
+
+Fraccion a;
+
+Utilizando este metodo se le pedira al usuario ingresar el denominador y numerador por medio de la terminal.
+
+La segunda:
+
+Fraccion b(1,2);
+ 
+De esta forma ingreso los numeros de manera directa: 1-> Numerador, 2->Denominador.
+
+Al realizar operaciones con cualquiera de las clases retornara un objeto resultado de esa operacion.
+
+Para crear un polinomio se debe ingresar el grado deseado de este en el main.cpp:
+
+Poly a(10);
+
+El polinomio no incluye la operacion de division pero incluye la sobrecarga de operador:
+
+!a;
+
+La cual me da la derivada de un polinomio.
+
+Para crear una matriz hay dos formas:
+Primero creandolas en el main.cpp ingresando el numero de filas y columnas directamente ej:
+
+Matrix foo(1,2);
+
+Con 1->filas y 2->columnas. El programa le pedira al usuario llenar las casillas por medio de la terminal. 
+
+La otra forma es en el main.cpp con la forma:
+
+Matrix bar;
+
+En este caso el programa pedira al usuario ingresar las filas y las columnas por medio de la terminal ademas del contenido de las casillas.
+
+Ademas de las clases principales esta la clase Template Calculadora la cual se crea en base al parametro de tipo data el cual se especifica al crearla:
+
+Calculadora<int> a;
+Calculadora<Matrix> b;
+Calculadora<Poly> c;
+Calculaodra<Fraccion> d;
+
+La clase calculadora tiene los metodos: add, sub , mul, div. Donde:
+add = a+b;
+sub = a-b;
+mul = a*b;
+div = a/b;
+
+Por ultimo  todas las clases tienen el operador ~ el cual imprime los contenidos de si mismo(excepto la clase calculadora).
+
+Para correr y instalar leer INSTALL.
+
+Autores:
+Jose Alberto Barrantes Abellan B50881
+Alejandro Cedeño Uribe B41672
+
+
+
+
+
