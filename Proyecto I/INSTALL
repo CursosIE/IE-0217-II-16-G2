@@ -1,0 +1,7 @@
+Se incluyen dos programas: 
+
+-Quicksort
+-Mergesort
+
+Para instalar ambos se puede utlizar el Makefile adjunto con el comando make en la consola, este comando compila los programas y genera los ejecutables para cada respectivo caso. 
+El programa Mergesort consiste en el ejecutable de este algoritmo, de forma analoga para el caso de Quicksort.

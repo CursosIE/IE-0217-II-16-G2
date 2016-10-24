@@ -1,0 +1,28 @@
+Se incluyen dos programas:
+
+---------------------------------------------Quicksort---------------------------------------------
+
+Para utilizar el programa de Quicksort basta con correrlo utilizando el comando make Quick en la consola. Tambien corriendo el programa con ./Quicksort en la consola. 
+
+El programa pedira al usuario el tañano del arreglo aleatorio a ordenar con Quicksort. Luego de ingresar este numero se ejecuta el programa, este imprime el arreglo aleatorio creado y luego imprime el resultante ordenado ademas del tiempo que tomo en ordenarlo. 
+Para el caso de quicksort cada vez que se corre el programa se crea un archivo llamado Quicksort.txt donde se guardan los datos en forma de una tabla dos columnas: Tiempo y tamaño.
+
+
+
+
+--------------------------------------------Mergesort----------------------------------------------
+
+Para correr el programa basta con utlizar el comando make Merge en la consola. Sino estando el mismo directorio de intalacion utilice el comando ./Mergesort en la consola. 
+
+El programa pedira al usuario el tañano del arreglo aleatorio a ordenar con Mergesort. Luego de ingresar este numero se ejecuta el programa, este imprime el arreglo aleatorio creado y luego imprime el resultante ordenado ademas del tiempo que tomo en ordenarlo. 
+Para el caso de Mergesort cada vez que se corre el programa se crea un archivo llamado Mergesort.txt donde se guardan los datos en forma de una tabla dos columnas: Tiempo y tamaño.
+
+
+------------------------------------------Desinstalar----------------------------------------------
+
+Para desintalar ambos programas basta con utlizar el comando make clean y este eliminara ambos ejecutables. Por otro lado si se desea desintalar y ademas eliminar los archivos de datos creados para por cada programa utilice el comand make fullclean para borrar tanto los ejecutables como los archivos de texto. 
+
+Autores: 
+Jose Alberto Barrantes B50881
+Alejandro Cedeño B41672
+
