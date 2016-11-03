@@ -1,0 +1,90 @@
+\hypertarget{class_card}{}\section{Card Class Reference}
+\label{class_card}\index{Card@{Card}}
+
+
+Inheritance diagram for Card\+:
+% FIG 0
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Rango} \{ \\*
+{\bfseries Ace} = 1, 
+{\bfseries Two}, 
+{\bfseries Three}, 
+{\bfseries Four}, 
+\\*
+{\bfseries Five}, 
+{\bfseries Six}, 
+{\bfseries Seven}, 
+{\bfseries Eight}, 
+\\*
+{\bfseries Nine}, 
+{\bfseries Ten}, 
+{\bfseries Jack}, 
+{\bfseries Queen}, 
+\\*
+{\bfseries King}, 
+{\bfseries Rango\+End}
+ \}\hypertarget{class_card_a5319d6bf725d009d5010c21a0550d72b}{}\label{class_card_a5319d6bf725d009d5010c21a0550d72b}
+
+\item 
+enum {\bfseries Color} \{ \\*
+{\bfseries Spades}, 
+{\bfseries Hearts}, 
+{\bfseries Diamonds}, 
+{\bfseries Clubs}, 
+\\*
+{\bfseries Color\+End}
+ \}\hypertarget{class_card_ad5805e73a4727fb7d3c76f3085b05fbe}{}\label{class_card_ad5805e73a4727fb7d3c76f3085b05fbe}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Card} (Rango \hyperlink{class_card_a5503f267af005285cdfeaa5633cd41bf}{value}, Color \hyperlink{class_card_ae2a16729f2c4b12afeea5e0524c4a540}{suit})\hypertarget{class_card_aa4882f55331d4cdc9dd88f3d29687575}{}\label{class_card_aa4882f55331d4cdc9dd88f3d29687575}
+
+\item 
+Rango \hyperlink{class_card_a5503f267af005285cdfeaa5633cd41bf}{value} () const 
+\item 
+Color \hyperlink{class_card_ae2a16729f2c4b12afeea5e0524c4a540}{suit} () const 
+\item 
+bool \hyperlink{class_card_af54ed83aa53a465a952001710a79d6d1}{operator==} (\hyperlink{class_card}{Card} \&a)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_card}{Card} \&card)\hypertarget{class_card_a87d21818b3e3abf651cbe67bcc82ec4a}{}\label{class_card_a87d21818b3e3abf651cbe67bcc82ec4a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que representa los colores y los valores de una carta utilizando enums. Esto facilita el manejo de impresion del color y el valor de una carta. 
+
+\subsection{Member Function Documentation}
+\index{Card@{Card}!operator==@{operator==}}
+\index{operator==@{operator==}!Card@{Card}}
+\subsubsection[{\texorpdfstring{operator==(\+Card \&a)}{operator==(Card &a)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Card\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Card} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_card_af54ed83aa53a465a952001710a79d6d1}{}\label{class_card_af54ed83aa53a465a952001710a79d6d1}
+Funcion para saber si dos cartas son iguales. \index{Card@{Card}!suit@{suit}}
+\index{suit@{suit}!Card@{Card}}
+\subsubsection[{\texorpdfstring{suit() const }{suit() const }}]{\setlength{\rightskip}{0pt plus 5cm}Color Card\+::suit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_card_ae2a16729f2c4b12afeea5e0524c4a540}{}\label{class_card_ae2a16729f2c4b12afeea5e0524c4a540}
+Funcion para obtener el color de una carta. \index{Card@{Card}!value@{value}}
+\index{value@{value}!Card@{Card}}
+\subsubsection[{\texorpdfstring{value() const }{value() const }}]{\setlength{\rightskip}{0pt plus 5cm}Rango Card\+::value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_card_a5503f267af005285cdfeaa5633cd41bf}{}\label{class_card_a5503f267af005285cdfeaa5633cd41bf}
+Funcion para obtener el valor de una carta. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{casino_8cpp}{casino.\+cpp}\end{DoxyCompactItemize}

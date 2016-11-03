@@ -1,0 +1,8 @@
+Simula un casino con una mesa, donde pueden ingresar hasta un maximo de 3 jugadores jugando blackjack.
+
+Para correr el programa desde la consola se utiliza el comando: 
+./casino ARG
+
+Donde ARG es la fila tentativa de jugadores a entrar al casino. Existen tres tipos de jugadores posibles: Ejecutivos, Trabajadores y Desempleados. Una fila ejemplo: EEEEDDDDTTTTT, DDDTTTEEEE. 
+
+Para desintalar utilize el comando make clean.

@@ -1,0 +1,70 @@
+\hypertarget{classpila_de_cartas}{}\section{pila\+De\+Cartas Class Reference}
+\label{classpila_de_cartas}\index{pila\+De\+Cartas@{pila\+De\+Cartas}}
+
+
+Inheritance diagram for pila\+De\+Cartas\+:
+% FIG 0
+
+
+Collaboration diagram for pila\+De\+Cartas\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classpila_de_cartas_a16bac9885441ef926ba74ee6322a9663}{barajar} ()
+\item 
+\hyperlink{class_card}{Card} \hyperlink{classpila_de_cartas_a9071896c634ec2a18fa384b57981a55a}{play} ()
+\item 
+void \hyperlink{classpila_de_cartas_a456bcaa53157a7552296286bf59a7863}{refill} ()
+\item 
+int \hyperlink{classpila_de_cartas_adb97b212f1d9f4b32724eb23633d206f}{draw} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{class_card}{Card} $>$ {\bfseries pila}\hypertarget{classpila_de_cartas_a59a48258f01a185c1e99f935a871338c}{}\label{classpila_de_cartas_a59a48258f01a185c1e99f935a871338c}
+
+\item 
+\hyperlink{classqueue}{queue}$<$ \hyperlink{class_card}{Card} $>$ {\bfseries pile}\hypertarget{classpila_de_cartas_aa9aac4fe6c49a5c4b1c6d0c8b4e7db36}{}\label{classpila_de_cartas_aa9aac4fe6c49a5c4b1c6d0c8b4e7db36}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Clase \hyperlink{classpila_de_cartas}{pila\+De\+Cartas} la cual crea una pila con 52 cartas cada una con sus propiedades color y valor, las guarda en un queue donde solo se puede accesar al valor de arriba de la pila. 
+
+\subsection{Member Function Documentation}
+\index{pila\+De\+Cartas@{pila\+De\+Cartas}!barajar@{barajar}}
+\index{barajar@{barajar}!pila\+De\+Cartas@{pila\+De\+Cartas}}
+\subsubsection[{\texorpdfstring{barajar()}{barajar()}}]{\setlength{\rightskip}{0pt plus 5cm}void pila\+De\+Cartas\+::barajar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classpila_de_cartas_a16bac9885441ef926ba74ee6322a9663}{}\label{classpila_de_cartas_a16bac9885441ef926ba74ee6322a9663}
+Aleatoriza la baraja \index{pila\+De\+Cartas@{pila\+De\+Cartas}!draw@{draw}}
+\index{draw@{draw}!pila\+De\+Cartas@{pila\+De\+Cartas}}
+\subsubsection[{\texorpdfstring{draw()}{draw()}}]{\setlength{\rightskip}{0pt plus 5cm}int pila\+De\+Cartas\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classpila_de_cartas_adb97b212f1d9f4b32724eb23633d206f}{}\label{classpila_de_cartas_adb97b212f1d9f4b32724eb23633d206f}
+Retorna el valor de la carta sacada. \index{pila\+De\+Cartas@{pila\+De\+Cartas}!play@{play}}
+\index{play@{play}!pila\+De\+Cartas@{pila\+De\+Cartas}}
+\subsubsection[{\texorpdfstring{play()}{play()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Card} pila\+De\+Cartas\+::play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classpila_de_cartas_a9071896c634ec2a18fa384b57981a55a}{}\label{classpila_de_cartas_a9071896c634ec2a18fa384b57981a55a}
+Saca una carta \index{pila\+De\+Cartas@{pila\+De\+Cartas}!refill@{refill}}
+\index{refill@{refill}!pila\+De\+Cartas@{pila\+De\+Cartas}}
+\subsubsection[{\texorpdfstring{refill()}{refill()}}]{\setlength{\rightskip}{0pt plus 5cm}void pila\+De\+Cartas\+::refill (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classpila_de_cartas_a456bcaa53157a7552296286bf59a7863}{}\label{classpila_de_cartas_a456bcaa53157a7552296286bf59a7863}
+Rellena la pila si es un nuevo juego. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{casino_8cpp}{casino.\+cpp}\end{DoxyCompactItemize}

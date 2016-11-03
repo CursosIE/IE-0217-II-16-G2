@@ -1,0 +1,89 @@
+\hypertarget{casino_8cpp}{}\section{casino.\+cpp File Reference}
+\label{casino_8cpp}\index{casino.\+cpp@{casino.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}queue.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$random$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+Include dependency graph for casino.\+cpp\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_card}{Card}
+\item 
+class \hyperlink{classpila_de_cartas}{pila\+De\+Cartas}
+\item 
+class \hyperlink{classjugador}{jugador}
+\item 
+class \hyperlink{classmesa}{mesa}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Card\+::\+Rango \& \hyperlink{casino_8cpp_a1c1cb2dfe465711b6f6e059d2e8271b1}{operator++} (Card\+::\+Rango \&value)
+\item 
+Card\+::\+Color \& \hyperlink{casino_8cpp_aaa6df93d21f0065856c75e5ce9841709}{operator++} (Card\+::\+Color \&suit)
+\item 
+void \hyperlink{casino_8cpp_abd64006b774edcaec7215c836b6009bf}{filltables} (std\+::vector$<$ \hyperlink{classjugador}{jugador} $>$ \&a, \hyperlink{classmesa}{mesa} \&tables)
+\item 
+\hyperlink{classqueue}{queue}$<$ char $>$ \hyperlink{casino_8cpp_a8f4f11e8f1fdf2b22f9fac43c01259db}{ordener} (std\+::string in)
+\item 
+std\+::vector$<$ \hyperlink{classjugador}{jugador} $>$ \hyperlink{casino_8cpp_ab761d9c4daed56ca16c540bcf96a3bc5}{crear\+Jugadores} (\hyperlink{classqueue}{queue}$<$ char $>$ lista)
+\item 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)\hypertarget{casino_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{casino_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Jose Alberto Barrantes B50881 Alejandro Cedeño \char`\"{}date 1 de Noviembre del 2016\char`\"{} 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{casino.\+cpp@{casino.\+cpp}!crear\+Jugadores@{crear\+Jugadores}}
+\index{crear\+Jugadores@{crear\+Jugadores}!casino.\+cpp@{casino.\+cpp}}
+\subsubsection[{\texorpdfstring{crear\+Jugadores(queue$<$ char $>$ lista)}{crearJugadores(queue< char > lista)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf jugador}$>$ crear\+Jugadores (
+\begin{DoxyParamCaption}
+\item[{{\bf queue}$<$ char $>$}]{lista}
+\end{DoxyParamCaption}
+)}\hypertarget{casino_8cpp_ab761d9c4daed56ca16c540bcf96a3bc5}{}\label{casino_8cpp_ab761d9c4daed56ca16c540bcf96a3bc5}
+Me crea un jugador con id de E, T, D dependiendo si es un Ejecutivo, Trabajador o Desempleados. \index{casino.\+cpp@{casino.\+cpp}!filltables@{filltables}}
+\index{filltables@{filltables}!casino.\+cpp@{casino.\+cpp}}
+\subsubsection[{\texorpdfstring{filltables(std\+::vector$<$ jugador $>$ \&a, mesa \&tables)}{filltables(std::vector< jugador > &a, mesa &tables)}}]{\setlength{\rightskip}{0pt plus 5cm}void filltables (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf jugador} $>$ \&}]{a, }
+\item[{{\bf mesa} \&}]{tables}
+\end{DoxyParamCaption}
+)}\hypertarget{casino_8cpp_abd64006b774edcaec7215c836b6009bf}{}\label{casino_8cpp_abd64006b774edcaec7215c836b6009bf}
+Funcion utlizada para llenar una mesa con jugadores. \index{casino.\+cpp@{casino.\+cpp}!operator++@{operator++}}
+\index{operator++@{operator++}!casino.\+cpp@{casino.\+cpp}}
+\subsubsection[{\texorpdfstring{operator++(\+Card\+::\+Rango \&value)}{operator++(Card::Rango &value)}}]{\setlength{\rightskip}{0pt plus 5cm}Card\+::\+Rango\& operator++ (
+\begin{DoxyParamCaption}
+\item[{Card\+::\+Rango \&}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{casino_8cpp_a1c1cb2dfe465711b6f6e059d2e8271b1}{}\label{casino_8cpp_a1c1cb2dfe465711b6f6e059d2e8271b1}
+Funcion utlizada para cuando se desea incrementar el valor de una carta. \index{casino.\+cpp@{casino.\+cpp}!operator++@{operator++}}
+\index{operator++@{operator++}!casino.\+cpp@{casino.\+cpp}}
+\subsubsection[{\texorpdfstring{operator++(\+Card\+::\+Color \&suit)}{operator++(Card::Color &suit)}}]{\setlength{\rightskip}{0pt plus 5cm}Card\+::\+Color\& operator++ (
+\begin{DoxyParamCaption}
+\item[{Card\+::\+Color \&}]{suit}
+\end{DoxyParamCaption}
+)}\hypertarget{casino_8cpp_aaa6df93d21f0065856c75e5ce9841709}{}\label{casino_8cpp_aaa6df93d21f0065856c75e5ce9841709}
+Funcion para \char`\"{}incrementar\char`\"{} el color de una carta. \index{casino.\+cpp@{casino.\+cpp}!ordener@{ordener}}
+\index{ordener@{ordener}!casino.\+cpp@{casino.\+cpp}}
+\subsubsection[{\texorpdfstring{ordener(std\+::string in)}{ordener(std::string in)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf queue}$<$char$>$ ordener (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{in}
+\end{DoxyParamCaption}
+)}\hypertarget{casino_8cpp_a8f4f11e8f1fdf2b22f9fac43c01259db}{}\label{casino_8cpp_a8f4f11e8f1fdf2b22f9fac43c01259db}
+La idea es ordenar el string de entrada al correr el programa segun la prioridad 2\+:1\+:05. 

@@ -1,0 +1,94 @@
+\hypertarget{classmesa}{}\section{mesa Class Reference}
+\label{classmesa}\index{mesa@{mesa}}
+
+
+Inheritance diagram for mesa\+:
+% FIG 0
+
+
+Collaboration diagram for mesa\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries mesa} (int num)\hypertarget{classmesa_a69bbe3328c91ab1c8d879242869b1c92}{}\label{classmesa_a69bbe3328c91ab1c8d879242869b1c92}
+
+\item 
+void \hyperlink{classmesa_ad43a9ce086745fbc0615cf24c493d102}{ingresarmesa} (\hyperlink{classjugador}{jugador} Jin)
+\item 
+void \hyperlink{classmesa_a534cd4d5323a56a8524976b9fb93859b}{elimplayer} (int k)
+\item 
+void \hyperlink{classmesa_a56a722015043f6f45102e48ba3236e18}{findwinner} ()
+\item 
+void \hyperlink{classmesa_a5d2a4f9b46a8d8b9c1335d3fffaef33c}{partida} ()
+\item 
+void \hyperlink{classmesa_a895972e154fb043837bf1b0928e0ad52}{correr\+Juego} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classjugador}{jugador} $>$ {\bfseries ingame}\hypertarget{classmesa_a01a0fc67fa78ee446eba1ebf6b806b36}{}\label{classmesa_a01a0fc67fa78ee446eba1ebf6b806b36}
+
+\item 
+int {\bfseries capacity}\hypertarget{classmesa_a4c31a18478d7d7f3632583fd87f73529}{}\label{classmesa_a4c31a18478d7d7f3632583fd87f73529}
+
+\item 
+int {\bfseries id}\hypertarget{classmesa_a69c49bfa36e8807aad720a1274b5a48f}{}\label{classmesa_a69c49bfa36e8807aad720a1274b5a48f}
+
+\item 
+int {\bfseries eliminado}\hypertarget{classmesa_a5023be21e8726881c46b374f80ea5c94}{}\label{classmesa_a5023be21e8726881c46b374f80ea5c94}
+
+\item 
+bool {\bfseries gaem} = true\hypertarget{classmesa_a8ff15212eae5b4dcc272bc0a1257379f}{}\label{classmesa_a8ff15212eae5b4dcc272bc0a1257379f}
+
+\item 
+int {\bfseries partidas}\hypertarget{classmesa_a273bb2a9f9a5ce1f2a9334d2626c2c54}{}\label{classmesa_a273bb2a9f9a5ce1f2a9334d2626c2c54}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Clase mesa que tiene su propia baraja de cartas, cada mesa tiene un vector de jugadores de tamaño maximo 3. 
+
+\subsection{Member Function Documentation}
+\index{mesa@{mesa}!correr\+Juego@{correr\+Juego}}
+\index{correr\+Juego@{correr\+Juego}!mesa@{mesa}}
+\subsubsection[{\texorpdfstring{correr\+Juego()}{correrJuego()}}]{\setlength{\rightskip}{0pt plus 5cm}void mesa\+::correr\+Juego (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmesa_a895972e154fb043837bf1b0928e0ad52}{}\label{classmesa_a895972e154fb043837bf1b0928e0ad52}
+Corre el juego mientras hayan jugadores. \index{mesa@{mesa}!elimplayer@{elimplayer}}
+\index{elimplayer@{elimplayer}!mesa@{mesa}}
+\subsubsection[{\texorpdfstring{elimplayer(int k)}{elimplayer(int k)}}]{\setlength{\rightskip}{0pt plus 5cm}void mesa\+::elimplayer (
+\begin{DoxyParamCaption}
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmesa_a534cd4d5323a56a8524976b9fb93859b}{}\label{classmesa_a534cd4d5323a56a8524976b9fb93859b}
+Saca un jugador de la mesa. \index{mesa@{mesa}!findwinner@{findwinner}}
+\index{findwinner@{findwinner}!mesa@{mesa}}
+\subsubsection[{\texorpdfstring{findwinner()}{findwinner()}}]{\setlength{\rightskip}{0pt plus 5cm}void mesa\+::findwinner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmesa_a56a722015043f6f45102e48ba3236e18}{}\label{classmesa_a56a722015043f6f45102e48ba3236e18}
+Encuentra el ganador de Blackjack. \index{mesa@{mesa}!ingresarmesa@{ingresarmesa}}
+\index{ingresarmesa@{ingresarmesa}!mesa@{mesa}}
+\subsubsection[{\texorpdfstring{ingresarmesa(jugador Jin)}{ingresarmesa(jugador Jin)}}]{\setlength{\rightskip}{0pt plus 5cm}void mesa\+::ingresarmesa (
+\begin{DoxyParamCaption}
+\item[{{\bf jugador}}]{Jin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmesa_ad43a9ce086745fbc0615cf24c493d102}{}\label{classmesa_ad43a9ce086745fbc0615cf24c493d102}
+Ingresa un jugador a una mesa si hay campo. \index{mesa@{mesa}!partida@{partida}}
+\index{partida@{partida}!mesa@{mesa}}
+\subsubsection[{\texorpdfstring{partida()}{partida()}}]{\setlength{\rightskip}{0pt plus 5cm}void mesa\+::partida (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmesa_a5d2a4f9b46a8d8b9c1335d3fffaef33c}{}\label{classmesa_a5d2a4f9b46a8d8b9c1335d3fffaef33c}
+Simula una partida hasta que el final del turno donde algun jugador no pida mas cartas. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{casino_8cpp}{casino.\+cpp}\end{DoxyCompactItemize}
