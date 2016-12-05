@@ -1,0 +1,25 @@
+La cadena mas larga en comun: AACGCG
+Cadena mas probable: TTCCCTGCCAGGAACTCG
+La cadena degenerada: SSDRDTRMDABSNADNRN
+Tiempo de ejecucion: 	0.174	
+
+Matriz de Pesos de las cadenas: 
+	A	C	G	T	
+1 |	0.1	0.3	0.3	0.3		
+2 |	0.1	0.3	0.3	0.3		
+3 |	0.4	0.5	0.1	0		
+4 |	0.2	0.4	0.2	0.2		
+5 |	0.5	0.5	0	0		
+6 |	0	0	0.4	0.6		
+7 |	0.3	0.2	0.3	0.2		
+8 |	0.3	0.3	0.2	0.2		
+9 |	0.4	0.4	0.2	0		
+10 |	0.4	0.2	0.1	0.3		
+11 |	0.4	0.2	0.4	0		
+12 |	0.2	0.3	0.3	0.2		
+13 |	0.9	0	0	0.1		
+14 |	0.5	0.3	0.1	0.1		
+15 |	0.1	0.9	0	0		
+16 |	0	0	0.5	0.5		
+17 |	0.2	0.4	0.2	0.2		
+18 |	0	0	0.6	0.4		

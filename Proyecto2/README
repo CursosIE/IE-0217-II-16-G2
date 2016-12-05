@@ -1,0 +1,6 @@
+El programa consiste en un analizador de motifs, para instalarlo utilize el comando make en la consola. 
+
+El programa recive de argumento en archivo de texto donde se encuentran las cadenas de ADN a analizar. 
+
+Para correr el programa utilize el comando ./Cadena ARG
+Donde ARG es el archivo a escanear. El programa retornara un archivo de texto donde se encuentra el analisis final.
